@@ -1,3 +1,7 @@
 {
-  "test": "Test"
+  "homePageTitle": "Home",
+  "promotionsPageTitle": "Promotions",
+  "deliveryAndPaymentPageTitle": "Delivery and payment",
+  "aboutPageTitle": "About Us",
+  "contactsPageTitle": "Contacts"
 }

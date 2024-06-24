@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       width: {},
-      height: {},
+      height: { headerHeight: '65px' },
       maxHeight: {},
       maxWidth: {
         container: '1280px',
@@ -22,6 +22,7 @@ export default {
       },
       backgroundColor: {
         mainBg: '#f5f5f5',
+        white: '#fcfcfc',
         lightBlue: '#70bbfc',
         darkBlue: '#004b7c',
         orange: '#ff7a00',

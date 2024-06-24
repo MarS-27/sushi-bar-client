@@ -1,3 +1,7 @@
 {
-  "test": "Тест"
+  "homePageTitle": "Головна",
+  "promotionsPageTitle": "Акції",
+  "deliveryAndPaymentPageTitle": "Доставка i оплата",
+  "aboutPageTitle": "Про нас",
+  "contactsPageTitle": "Контакти"
 }
