@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* clsx(
+    'after:absolute after:left-0 after:top-[90%] after:h-0.5 after:w-0 after:bg-lightBlue after:transition-all after:duration-300 hover:text-lightBlue hover:transition-all hover:duration-300',
+    'after:hover:w-full after:hover:transition-all after:hover:duration-300',
+    'text-lightBlue after:absolute after:left-0 after:top-[90%] after:h-0.5 after:w-full after:bg-lightBlue',
+) */

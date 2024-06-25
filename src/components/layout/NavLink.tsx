@@ -13,13 +13,9 @@ export const NavLink: FC<NavLinkProps> = ({ children, to }) => {
       to={to}
       className={({ isActive }) =>
         clsx(
-          clsx(
-            'relative transition-all duration-300',
-            'after:absolute after:left-0 after:top-[90%] after:h-0.5 after:w-0 after:bg-lightBlue after:transition-all after:duration-300 hover:text-lightBlue hover:transition-all hover:duration-300',
-            'after:hover:w-full after:hover:transition-all after:hover:duration-300',
-            isActive &&
-              'text-lightBlue after:absolute after:left-0 after:top-[90%] after:h-0.5 after:w-full after:bg-lightBlue',
-          ),
+          'bg-0-100 transition-navButton relative rounded-md bg-gradient-to-r from-lightBlue to-lightBlue bg-right bg-no-repeat px-2 py-1 duration-500',
+          'hover:bg-100-100 hover:bg-gradient-to-l hover:bg-left hover:text-white',
+          isActive && 'bg-lightBlue text-white',
         )
       }
     >

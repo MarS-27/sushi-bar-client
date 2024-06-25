@@ -4,12 +4,15 @@ export default {
   theme: {
     extend: {
       width: {},
-      height: { headerHeight: '65px' },
+      height: { headerHeight: '65px', mobileMenu: 'calc(100dvh - 65px)' },
       maxHeight: {},
       maxWidth: {
         container: '1280px',
       },
       minWidth: { container: '320px' },
+      fontFamily: {
+        montserrat: ['Montserrat', 'serif'],
+      },
       fontSize: {
         xs10: ['10px', '12px'],
         xs12: ['12px', '16px'],
@@ -24,7 +27,7 @@ export default {
         mainBg: '#f5f5f5',
         white: '#fcfcfc',
         lightBlue: '#70bbfc',
-        darkBlue: '#004b7c',
+        darkBlue: '#003d66',
         orange: '#ff7a00',
         yellow: '#fac817',
         red: '#fa0d0d',
@@ -36,10 +39,17 @@ export default {
         black: '#231F20',
         white: '#fcfcfc',
         lightBlue: '#70bbfc',
-        darkBlue: '#004b7c',
+        darkBlue: '#003d66',
         red: '#fa0d0d',
         grayLight: '#9d9d9d',
         grayDark: '#5d5d5d',
+      },
+      backgroundSize: {
+        '0-100': '0% 100%',
+        '100-100': '100% 100%',
+      },
+      transitionProperty: {
+        navButton: 'background-size, color',
       },
     },
   },

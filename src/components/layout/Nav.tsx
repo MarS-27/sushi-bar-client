@@ -13,7 +13,7 @@ export const Nav: FC<NavProps> = ({ closeNav }) => {
 
   return (
     <div className="max-lg:flex max-lg:h-full max-lg:w-full max-lg:flex-col max-lg:justify-between">
-      <nav className="flex gap-5 max-lg:flex-col max-lg:justify-between">
+      <nav className="flex gap-3 max-lg:flex-col max-lg:justify-between">
         <NavLink to={ROUTER_PATHS.home}>{t('homePageTitle')}</NavLink>
         <NavLink to={ROUTER_PATHS.promotions}>
           {t('promotionsPageTitle')}

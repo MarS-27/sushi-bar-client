@@ -10,7 +10,7 @@ i18next.use(initReactI18next).init(i18Config);
 const App = () => {
   return (
     <I18nextProvider i18n={i18next}>
-      <div className="flex min-h-dvh flex-col items-center bg-mainBg">
+      <div className="font-montserrat flex min-h-dvh flex-col items-center bg-mainBg">
         <Header />
         <main className="mt-[65px] max-w-container flex-1">
           <Outlet />
