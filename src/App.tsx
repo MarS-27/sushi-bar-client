@@ -1,23 +1,36 @@
-import i18next from 'i18next';
-import { I18nextProvider, initReactI18next } from 'react-i18next';
-import { i18Config } from './i18n/config';
-import { Header } from './components/layout/Header';
-import { Footer } from './components/layout/Footer';
 import { Outlet } from 'react-router-dom';
-
-i18next.use(initReactI18next).init(i18Config);
+import { Footer } from './components/layout/Footer';
+import { Header } from './components/layout/Header';
+import { QueryErrorResetBoundary } from '@tanstack/react-query';
+import { ErrorBoundary } from 'react-error-boundary';
+import { Suspense } from 'react';
 
 const App = () => {
   return (
-    <I18nextProvider i18n={i18next}>
-      <div className="font-montserrat flex min-h-dvh flex-col items-center bg-mainBg">
-        <Header />
-        <main className="mt-[65px] max-w-container flex-1">
-          <Outlet />
-        </main>
-        <Footer />
-      </div>
-    </I18nextProvider>
+    <div className="flex min-h-dvh flex-col items-center bg-mainBg font-montserrat">
+      <QueryErrorResetBoundary>
+        {({ reset }) => (
+          <ErrorBoundary
+            fallbackRender={({ error, resetErrorBoundary }) => (
+              <div>
+                There was an error!{' '}
+                <button onClick={() => resetErrorBoundary()}>Try again</button>
+                <pre style={{ whiteSpace: 'normal' }}>{error.message}</pre>
+              </div>
+            )}
+            onReset={reset}
+          >
+            <Suspense fallback={<h1>Loading...</h1>}>
+              <Header />
+              <main className="mt-[65px] max-w-container flex-1">
+                <Outlet />
+              </main>
+              <Footer />
+            </Suspense>
+          </ErrorBoundary>
+        )}
+      </QueryErrorResetBoundary>
+    </div>
   );
 };
 

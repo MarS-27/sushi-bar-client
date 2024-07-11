@@ -5,6 +5,9 @@ import logoIcon from '../../assets/logo-icon.svg';
 import { useState } from 'react';
 import clsx from 'clsx';
 import { BurgerButton } from '../ui/BurgerButton';
+import { LangButtonts } from '../ui/LangButtons';
+import { SocialMediaButtons } from '../ui/SocialMediaButtons';
+import { PhoneNumbers } from '../ui/PhoneNumbers';
 
 export const Header = () => {
   const [isOpenMenu, toggleOpenMenu] = useState(false);
@@ -19,9 +22,10 @@ export const Header = () => {
             <p className="">BAR</p>
           </div>
         </Link>
+        <PhoneNumbers />
         <div
           className={clsx(
-            'max-lg:h-mobileMenu transition-all duration-300 max-lg:visible max-lg:fixed max-lg:left-0 max-lg:top-[65px] max-lg:w-full max-lg:overflow-hidden max-lg:bg-lightBlue max-lg:bg-opacity-30',
+            'transition-all duration-300 max-lg:visible max-lg:fixed max-lg:left-0 max-lg:top-[65px] max-lg:h-mobileMenu max-lg:w-full max-lg:overflow-hidden max-lg:bg-lightBlue max-lg:bg-opacity-30 max-lg:backdrop-blur-sm',
             !isOpenMenu ? 'max-lg:invisible max-lg:h-0 max-lg:opacity-0' : null,
           )}
           onClick={() => toggleOpenMenu(false)}
@@ -30,7 +34,11 @@ export const Header = () => {
             className="flex items-center gap-5 max-lg:ml-auto max-lg:h-full max-lg:w-1/4 max-lg:min-w-[300px] max-lg:items-start max-lg:justify-evenly max-lg:bg-white max-lg:pb-[20px] max-lg:pl-5 max-lg:pr-3 max-lg:pt-[10px] max-sm:w-full"
             onClick={(e) => e.stopPropagation()}
           >
-            <Nav closeNav={() => toggleOpenMenu(false)} />
+            <Nav closeMobileNav={() => isOpenMenu && toggleOpenMenu(false)} />
+            <div className="max-lg:flex max-lg:h-full max-lg:flex-col max-lg:justify-between">
+              <LangButtonts />
+              <SocialMediaButtons classNameModificator="flex-col lg:hidden" />
+            </div>
           </div>
         </div>
         <BurgerButton
