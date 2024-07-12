@@ -1,10 +1,10 @@
+import { type FC } from 'react';
 import clsx from 'clsx';
-import { FC } from 'react';
 
-type BurgerButttonProps = {
+interface BurgerButttonProps {
   isOpenMenu: boolean;
   handleToggleMenu(): void;
-};
+}
 
 export const BurgerButton: FC<BurgerButttonProps> = ({
   isOpenMenu,

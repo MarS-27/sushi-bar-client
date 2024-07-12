@@ -1,8 +1,3 @@
-interface DataItem<T> {
-  id: number;
-  attributes: T;
-}
-
 interface Pagination {
   page: number;
   pageSize: number;
@@ -51,6 +46,11 @@ interface ImageAttributes extends ImageInfo {
   previewUrl: string | null;
   createdAt: string;
   updatedAt: string;
+}
+
+export interface DataItem<T> {
+  id: number;
+  attributes: T;
 }
 
 export interface ImageData {

@@ -2,11 +2,11 @@ import clsx from 'clsx';
 import { type ReactNode, type FC } from 'react';
 import { NavLink as RouterLink } from 'react-router-dom';
 
-type NavLinkProps = {
+interface NavLinkProps {
   to: string;
   children: ReactNode;
   closeMobileNav?(): void;
-};
+}
 
 export const NavLink: FC<NavLinkProps> = ({ children, to, closeMobileNav }) => {
   return (

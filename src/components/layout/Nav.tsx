@@ -4,9 +4,9 @@ import { ROUTER_PATHS } from '../../utils/routerPaths';
 import { NavLink } from './NavLink';
 import { PhoneNumber } from '../ui/PhoneNumber';
 
-type NavProps = {
+interface NavProps {
   closeMobileNav(): void;
-};
+}
 
 export const Nav: FC<NavProps> = ({ closeMobileNav }) => {
   const { t } = useTranslation();
