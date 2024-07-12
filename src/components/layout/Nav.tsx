@@ -2,6 +2,7 @@ import { type FC } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ROUTER_PATHS } from '../../utils/routerPaths';
 import { NavLink } from './NavLink';
+import { PhoneNumber } from '../ui/PhoneNumber';
 
 type NavProps = {
   closeMobileNav(): void;
@@ -32,10 +33,7 @@ export const Nav: FC<NavProps> = ({ closeMobileNav }) => {
           {t('contactsPageTitle')}
         </NavLink>
       </nav>
-
-      {/* <p className="whitespace-nowrap max-[420px]:text-xs sm:hidden">
-        Київ, вул. Ярослава Мудрого, 1
-      </p> */}
+      <PhoneNumber classNameModificator="lg:hidden" />
     </div>
   );
 };

@@ -11,5 +11,5 @@ export interface Contacts extends BaseAttributes {
   work_mode: string;
   social_media: SocialMedia[];
   addresses: TextValuesList[];
-  phone_numbers: TextValuesList[];
+  phone_number: string;
 }

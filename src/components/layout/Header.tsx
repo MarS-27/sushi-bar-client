@@ -7,7 +7,7 @@ import clsx from 'clsx';
 import { BurgerButton } from '../ui/BurgerButton';
 import { LangButtonts } from '../ui/LangButtons';
 import { SocialMediaButtons } from '../ui/SocialMediaButtons';
-import { PhoneNumbers } from '../ui/PhoneNumbers';
+import { PhoneNumber } from '../ui/PhoneNumber';
 
 export const Header = () => {
   const [isOpenMenu, toggleOpenMenu] = useState(false);
@@ -22,7 +22,6 @@ export const Header = () => {
             <p className="">BAR</p>
           </div>
         </Link>
-        <PhoneNumbers />
         <div
           className={clsx(
             'transition-all duration-300 max-lg:visible max-lg:fixed max-lg:left-0 max-lg:top-[65px] max-lg:h-mobileMenu max-lg:w-full max-lg:overflow-hidden max-lg:bg-lightBlue max-lg:bg-opacity-30 max-lg:backdrop-blur-sm',
@@ -39,6 +38,7 @@ export const Header = () => {
               <LangButtonts />
               <SocialMediaButtons classNameModificator="flex-col lg:hidden" />
             </div>
+            <PhoneNumber classNameModificator="max-lg:hidden" />
           </div>
         </div>
         <BurgerButton
