@@ -10,7 +10,7 @@ export const useGetCategories = () => {
 
   const getCategories = async (): Promise<ApiCollectionResponse<Category>> => {
     const result: ApiCollectionResponse<Category> = await axiosInstance
-      .get(`/categories?locale=${i18n.language}&populate=icon`)
+      .get(`/categories?locale=${i18n.language}&sort=id&populate=icon`)
       .then(
         (resp: AxiosResponse<ApiCollectionResponse<Category>>) => resp.data,
       );

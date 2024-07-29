@@ -14,17 +14,17 @@ export const SocialMediaButtons: FC<SocialMediaButtonsProps> = ({
 
   return (
     <div className={clsx('flex items-center gap-2', classNameModificator)}>
-      {socialMedia?.map((item) => (
+      {socialMedia?.map(({ id, link, title, icon }) => (
         <a
-          key={item.id}
+          key={id}
           className="transition-all duration-300 hover:scale-110"
-          href={item.link}
+          href={link}
           target="_blank"
         >
           <img
             className="h-10 w-10 min-w-[40px]"
-            src={item.icon.data.attributes.url}
-            alt={item.title}
+            src={icon.data.attributes.url}
+            alt={title}
           />
         </a>
       ))}

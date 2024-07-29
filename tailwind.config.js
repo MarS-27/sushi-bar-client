@@ -1,13 +1,18 @@
 /** @type {import('tailwindcss').Config} */
+import scrollbarPlugin from 'tailwind-scrollbar';
+
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
-      width: {},
-      height: { headerHeight: '65px', mobileMenu: 'calc(100dvh - 65px)' },
-      maxHeight: {},
+      width: { categoriesMenu: '90px' },
+      height: {
+        headerHeight: '65px',
+        mobileMenu: 'calc(100dvh - 65px)',
+      },
+      maxHeight: { categoriesMenu: 'calc(100dvh - 120px)' },
       maxWidth: {
-        container: '1280px',
+        container: '1400px',
       },
       minWidth: { container: '320px' },
       fontFamily: {
@@ -53,5 +58,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [scrollbarPlugin],
 };

@@ -4,10 +4,11 @@ import { Header } from './components/layout/Header';
 import { QueryErrorResetBoundary } from '@tanstack/react-query';
 import { ErrorBoundary } from 'react-error-boundary';
 import { Suspense } from 'react';
+import { MenuCategoriesNav } from './components/layout/MenuCategoriesNav';
 
 const App = () => {
   return (
-    <div className="flex min-h-dvh flex-col items-center bg-mainBg font-montserrat">
+    <div className="flex min-h-dvh flex-col items-center bg-mainBg font-montserrat text-black">
       <QueryErrorResetBoundary>
         {({ reset }) => (
           <ErrorBoundary
@@ -22,6 +23,7 @@ const App = () => {
           >
             <Suspense fallback={<h1>Loading...</h1>}>
               <Header />
+              <MenuCategoriesNav />
               <main className="mt-[65px] max-w-container flex-1">
                 <Outlet />
               </main>

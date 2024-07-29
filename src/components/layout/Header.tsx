@@ -8,17 +8,12 @@ import { BurgerButton } from '../ui/BurgerButton';
 import { LangButtonts } from '../ui/LangButtons';
 import { SocialMediaButtons } from '../ui/SocialMediaButtons';
 import { PhoneNumber } from '../ui/PhoneNumber';
-import { useGetCategories } from '../../hooks/useGetCategories';
 
 export const Header = () => {
   const [isOpenMenu, toggleOpenMenu] = useState(false);
 
-  const { categoriesData } = useGetCategories();
-
-  console.log(categoriesData);
-
   return (
-    <header className="fixed inset-0 z-50 flex h-headerHeight w-full items-center bg-white font-medium text-grayDark shadow-md">
+    <header className="fixed z-50 flex h-headerHeight w-full items-center bg-white font-medium text-grayDark shadow-md">
       <div className="mx-auto flex w-full max-w-container items-center justify-between px-4">
         <Link to={ROUTER_PATHS.home} className="flex items-center gap-1">
           <img className="h-12 w-12 min-w-12" src={logoIcon} alt="logo" />
