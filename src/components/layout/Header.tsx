@@ -16,10 +16,10 @@ export const Header = () => {
     <header className="fixed z-50 flex h-headerHeight w-full items-center bg-white font-medium text-grayDark shadow-md">
       <div className="mx-auto flex w-full max-w-container items-center justify-between px-4">
         <Link to={ROUTER_PATHS.home} className="flex items-center gap-1">
-          <img className="h-12 w-12 min-w-12" src={logoIcon} alt="logo" />
+          <img className="size-12 min-w-12" src={logoIcon} alt="logo" />
           <div className="flex flex-col items-center text-m24 font-bold leading-none text-darkBlue">
-            <p className="">SUSHI</p>
-            <p className="">BAR</p>
+            <p>SUSHI</p>
+            <p>BAR</p>
           </div>
         </Link>
         <div

@@ -5,7 +5,7 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
-      width: { categoriesMenu: '90px' },
+      width: { categoriesMenu: '90px', mainInner: 'calc(100% - 114px)' },
       height: {
         headerHeight: '65px',
         mobileMenu: 'calc(100dvh - 65px)',

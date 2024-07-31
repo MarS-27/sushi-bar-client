@@ -6,8 +6,18 @@ export const MenuCategoriesNav = () => {
   const { categoriesData } = useGetCategories();
 
   return (
-    <aside className={clsx('fixed left-4 top-20 z-50')}>
-      <nav className="max-h-categoriesMenu flex w-categoriesMenu flex-col justify-start gap-px overflow-y-auto rounded-md bg-white p-0.5 shadow-md scrollbar-none">
+    <div
+      className={clsx(
+        'fixed left-1/2 top-20 z-10 w-full max-w-container -translate-x-1/2 pl-4',
+        'max-md:bottom-0 max-md:left-0 max-md:top-auto max-md:translate-x-0 max-md:pl-0',
+      )}
+    >
+      <nav
+        className={clsx(
+          'flex max-h-categoriesMenu w-categoriesMenu flex-col justify-start gap-px overflow-auto rounded-md bg-white p-0.5 shadow-md scrollbar-none',
+          'justify-between max-md:w-full max-md:flex-row max-md:rounded-none',
+        )}
+      >
         {categoriesData.map(({ id, attributes }) => (
           <MenuCategoryLink
             key={id}
@@ -15,12 +25,13 @@ export const MenuCategoriesNav = () => {
             className={({ isActive }) =>
               clsx(
                 'flex flex-col items-center gap-1 rounded-md p-2 text-xs12 font-semibold text-darkBlue transition-all duration-300 hover:bg-lightBlue hover:bg-opacity-30',
+                'max-md:min-w-20',
                 isActive && 'bg-lightBlue bg-opacity-30',
               )
             }
           >
             <img
-              className="h-8 w-8 min-w-8"
+              className="size-8 min-w-8"
               src={attributes.icon.data.attributes.url}
               alt={attributes.title}
             />
@@ -28,6 +39,6 @@ export const MenuCategoriesNav = () => {
           </MenuCategoryLink>
         ))}
       </nav>
-    </aside>
+    </div>
   );
 };
