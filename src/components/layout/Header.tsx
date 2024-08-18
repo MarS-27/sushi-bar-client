@@ -1,13 +1,11 @@
-import { Link } from 'react-router-dom';
-import { Nav } from './Nav';
-import { ROUTER_PATHS } from '../../utils/routerPaths';
-import logoIcon from '../../assets/logo-icon.svg';
-import { useState } from 'react';
 import clsx from 'clsx';
+import { useState } from 'react';
 import { BurgerButton } from '../ui/BurgerButton';
 import { LangButtonts } from '../ui/LangButtons';
-import { SocialMediaButtons } from '../ui/SocialMediaButtons';
+import { Logo } from '../ui/Logo';
 import { PhoneNumber } from '../ui/PhoneNumber';
+import { SocialMediaButtons } from '../ui/SocialMediaButtons';
+import { Nav } from './Nav';
 
 export const Header = () => {
   const [isOpenMenu, toggleOpenMenu] = useState(false);
@@ -15,13 +13,7 @@ export const Header = () => {
   return (
     <header className="fixed z-50 flex h-headerHeight w-full items-center bg-white font-medium text-grayDark shadow-md">
       <div className="mx-auto flex w-full max-w-container items-center justify-between px-4">
-        <Link to={ROUTER_PATHS.home} className="flex items-center gap-1">
-          <img className="size-12 min-w-12" src={logoIcon} alt="logo" />
-          <div className="flex flex-col items-center text-m24 font-bold leading-none text-darkBlue">
-            <p>SUSHI</p>
-            <p>BAR</p>
-          </div>
-        </Link>
+        <Logo />
         <div
           className={clsx(
             'transition-all duration-300',

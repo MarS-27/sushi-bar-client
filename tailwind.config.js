@@ -5,7 +5,7 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
-      width: { categoriesMenu: '90px', mainInner: 'calc(100% - 114px)' },
+      width: { categoriesMenu: '90px', containerInner: 'calc(100% - 114px)' },
       height: {
         headerHeight: '65px',
         mobileMenu: 'calc(100dvh - 65px)',
@@ -13,6 +13,7 @@ export default {
       maxHeight: { categoriesMenu: 'calc(100dvh - 120px)' },
       maxWidth: {
         container: '1400px',
+        footerContainer: '1254px',
       },
       minWidth: { container: '320px' },
       fontFamily: {

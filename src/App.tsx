@@ -11,8 +11,8 @@ const App = () => {
   return (
     <div
       className={clsx(
-        'flex min-h-dvh flex-col items-center bg-mainBg font-montserrat text-black',
-        'max-md:pb-20',
+        'flex min-h-dvh flex-col items-center bg-mainBg font-montserrat text-s16 text-black',
+        'max-md:pb-[72px]',
       )}
     >
       <QueryErrorResetBoundary>
@@ -33,7 +33,7 @@ const App = () => {
               <main className="mt-20 flex w-full max-w-container flex-1 justify-end px-4">
                 <div
                   className={clsx(
-                    'w-mainInner relative z-30',
+                    'w-containerInner relative z-30',
                     'max-md:static max-md:z-0 max-md:w-full',
                   )}
                 >

@@ -1,93 +1,90 @@
 const Home = () => {
   return (
     <div>
-      <button type="button" onClick={() => console.log('test')}>
-        Home
-      </button>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit soluta
-        molestias ducimus explicabo iure, libero illo, non facilis at, quasi
-        iusto tempora impedit consequatur illum similique accusamus distinctio
-        architecto animi.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit soluta
-        molestias ducimus explicabo iure, libero illo, non facilis at, quasi
-        iusto tempora impedit consequatur illum similique accusamus distinctio
-        architecto animi.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit soluta
-        molestias ducimus explicabo iure, libero illo, non facilis at, quasi
-        iusto tempora impedit consequatur illum similique accusamus distinctio
-        architecto animi.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit soluta
-        molestias ducimus explicabo iure, libero illo, non facilis at, quasi
-        iusto tempora impedit consequatur illum similique accusamus distinctio
-        architecto animi.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit soluta
-        molestias ducimus explicabo iure, libero illo, non facilis at, quasi
-        iusto tempora impedit consequatur illum similique accusamus distinctio
-        architecto animi.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit soluta
-        molestias ducimus explicabo iure, libero illo, non facilis at, quasi
-        iusto tempora impedit consequatur illum similique accusamus distinctio
-        architecto animi.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit soluta
-        molestias ducimus explicabo iure, libero illo, non facilis at, quasi
-        iusto tempora impedit consequatur illum similique accusamus distinctio
-        architecto animi.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit soluta
-        molestias ducimus explicabo iure, libero illo, non facilis at, quasi
-        iusto tempora impedit consequatur illum similique accusamus distinctio
-        architecto animi.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit soluta
-        molestias ducimus explicabo iure, libero illo, non facilis at, quasi
-        iusto tempora impedit consequatur illum similique accusamus distinctio
-        architecto animi.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit soluta
-        molestias ducimus explicabo iure, libero illo, non facilis at, quasi
-        iusto tempora impedit consequatur illum similique accusamus distinctio
-        architecto animi.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit soluta
-        molestias ducimus explicabo iure, libero illo, non facilis at, quasi
-        iusto tempora impedit consequatur illum similique accusamus distinctio
-        architecto animi.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit soluta
-        molestias ducimus explicabo iure, libero illo, non facilis at, quasi
-        iusto tempora impedit consequatur illum similique accusamus distinctio
-        architecto animi.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit soluta
-        molestias ducimus explicabo iure, libero illo, non facilis at, quasi
-        iusto tempora impedit consequatur illum similique accusamus distinctio
-        architecto animi.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit soluta
-        molestias ducimus explicabo iure, libero illo, non facilis at, quasi
-        iusto tempora impedit consequatur illum similique accusamus distinctio
-        architecto animi.
-      </p>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi saepe
+        provident, enim sed architecto illo molestiae quidem harum rerum
+        laudantium veniam magni ratione vitae culpa cupiditate. Non ratione
+        alias odio!
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi saepe
+        provident, enim sed architecto illo molestiae quidem harum rerum
+        laudantium veniam magni ratione vitae culpa cupiditate. Non ratione
+        alias odio!
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi saepe
+        provident, enim sed architecto illo molestiae quidem harum rerum
+        laudantium veniam magni ratione vitae culpa cupiditate. Non ratione
+        alias odio!
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi saepe
+        provident, enim sed architecto illo molestiae quidem harum rerum
+        laudantium veniam magni ratione vitae culpa cupiditate. Non ratione
+        alias odio!
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi saepe
+        provident, enim sed architecto illo molestiae quidem harum rerum
+        laudantium veniam magni ratione vitae culpa cupiditate. Non ratione
+        alias odio!
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi saepe
+        provident, enim sed architecto illo molestiae quidem harum rerum
+        laudantium veniam magni ratione vitae culpa cupiditate. Non ratione
+        alias odio!
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi saepe
+        provident, enim sed architecto illo molestiae quidem harum rerum
+        laudantium veniam magni ratione vitae culpa cupiditate. Non ratione
+        alias odio!
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi saepe
+        provident, enim sed architecto illo molestiae quidem harum rerum
+        laudantium veniam magni ratione vitae culpa cupiditate. Non ratione
+        alias odio!
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi saepe
+        provident, enim sed architecto illo molestiae quidem harum rerum
+        laudantium veniam magni ratione vitae culpa cupiditate. Non ratione
+        alias odio!
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi saepe
+        provident, enim sed architecto illo molestiae quidem harum rerum
+        laudantium veniam magni ratione vitae culpa cupiditate. Non ratione
+        alias odio!
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi saepe
+        provident, enim sed architecto illo molestiae quidem harum rerum
+        laudantium veniam magni ratione vitae culpa cupiditate. Non ratione
+        alias odio!
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi saepe
+        provident, enim sed architecto illo molestiae quidem harum rerum
+        laudantium veniam magni ratione vitae culpa cupiditate. Non ratione
+        alias odio!
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi saepe
+        provident, enim sed architecto illo molestiae quidem harum rerum
+        laudantium veniam magni ratione vitae culpa cupiditate. Non ratione
+        alias odio!
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi saepe
+        provident, enim sed architecto illo molestiae quidem harum rerum
+        laudantium veniam magni ratione vitae culpa cupiditate. Non ratione
+        alias odio!
+      </div>
     </div>
   );
 };

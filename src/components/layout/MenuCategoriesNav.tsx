@@ -24,7 +24,8 @@ export const MenuCategoriesNav = () => {
             to={`products/${id}`}
             className={({ isActive }) =>
               clsx(
-                'flex flex-col items-center gap-1 rounded-md p-2 text-xs12 font-semibold text-darkBlue transition-all duration-300 hover:bg-lightBlue hover:bg-opacity-30',
+                'flex flex-col items-center gap-1 rounded-md p-2 text-xs12 font-semibold text-darkBlue transition-all duration-300',
+                'hover:bg-lightBlue hover:bg-opacity-30',
                 'max-md:min-w-20',
                 isActive && 'bg-lightBlue bg-opacity-30',
               )
