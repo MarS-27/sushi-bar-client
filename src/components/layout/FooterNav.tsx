@@ -12,7 +12,13 @@ export const FooterNav = () => {
   );
 
   return (
-    <nav className="flex flex-col gap-2">
+    <nav
+      className={clsx(
+        'flex flex-col gap-2',
+        'max-lg:items-center',
+        'max-[540px]:hidden',
+      )}
+    >
       <Link to={ROUTER_PATHS.home} className={linkStyle}>
         {t('homePageTitle')}
       </Link>
