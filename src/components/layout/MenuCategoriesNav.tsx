@@ -9,7 +9,7 @@ export const MenuCategoriesNav = () => {
     <div
       className={clsx(
         'fixed left-1/2 top-20 z-10 w-full max-w-container -translate-x-1/2 pl-4',
-        'z-40 max-md:bottom-0 max-md:left-0 max-md:top-auto max-md:translate-x-0 max-md:pl-0',
+        'max-md:bottom-0 max-md:left-0 max-md:top-auto max-md:z-40 max-md:translate-x-0 max-md:pl-0',
       )}
     >
       <nav

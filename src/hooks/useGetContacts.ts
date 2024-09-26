@@ -18,17 +18,12 @@ export const useGetContacts = () => {
     return result;
   };
 
-  const {
-    data,
-    error,
-    isLoading: isContactsLoading,
-    isError: isContactsError,
-  } = useSuspenseQuery({
+  const { data } = useSuspenseQuery({
     queryKey: [i18n.language, 'contacts'],
     queryFn: getContacts,
   });
 
   const contactsData = data?.data.attributes;
 
-  return { contactsData, isContactsLoading, isContactsError, error };
+  return { contactsData };
 };

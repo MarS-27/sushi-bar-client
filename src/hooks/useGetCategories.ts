@@ -18,17 +18,12 @@ export const useGetCategories = () => {
     return result;
   };
 
-  const {
-    data,
-    error,
-    isLoading: isCategoriesLoading,
-    isError: isCategoriesError,
-  } = useSuspenseQuery({
+  const { data } = useSuspenseQuery({
     queryKey: [i18n.language, 'categories'],
     queryFn: getCategories,
   });
 
   const categoriesData = data?.data;
 
-  return { categoriesData, isCategoriesLoading, isCategoriesError, error };
+  return { categoriesData };
 };

@@ -26,7 +26,7 @@ export default {
         s16: ['16px', '24px'],
         m20: ['20px', '28px'],
         m24: ['24px', '32px'],
-        l28: ['29px', '36px'],
+        l28: ['28px', '36px'],
         l32: ['32px', '38px'],
       },
       backgroundColor: {
