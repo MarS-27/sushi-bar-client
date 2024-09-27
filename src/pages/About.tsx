@@ -11,7 +11,7 @@ const About = () => {
     <section
       className={clsx('flex max-w-3xl flex-col gap-5 pb-2.5', 'max-md:gap-2.5')}
     >
-      <PageTitle divider={true}>{t('aboutPageTitle')}</PageTitle>
+      <PageTitle>{t('aboutPageTitle')}</PageTitle>
       {aboutData.paragraphs.map((p) => (
         <p key={p.id} className="max-md:text-s14">
           {p.value}

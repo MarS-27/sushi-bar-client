@@ -10,7 +10,7 @@ export const Contacts = () => {
 
   return (
     <section className={clsx('flex flex-col gap-5', 'max-md:gap-2.5')}>
-      <PageTitle divider={true}>{t('contactsPageTitle')}</PageTitle>
+      <PageTitle>{t('contactsPageTitle')}</PageTitle>
       <div>
         <p className="font-semibold">Адреса:</p>
         {contactsData.addresses.map((a) => (
