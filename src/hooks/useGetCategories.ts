@@ -3,7 +3,7 @@ import { type ApiCollectionResponse } from '../types/types';
 import { useTranslation } from 'react-i18next';
 import axiosInstance from '../utils/axiosInstance';
 import { useSuspenseQuery } from '@tanstack/react-query';
-import { Category } from '../types/category';
+import { type Category } from '../types/category';
 
 export const useGetCategories = () => {
   const { i18n } = useTranslation();

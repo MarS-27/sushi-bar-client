@@ -79,3 +79,8 @@ export interface TextValuesList {
   id: number;
   value: string;
 }
+
+export interface InfoList {
+  title: string;
+  description: string;
+}

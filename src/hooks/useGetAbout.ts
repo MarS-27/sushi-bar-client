@@ -1,5 +1,5 @@
 import { useSuspenseQuery } from '@tanstack/react-query';
-import { About } from '../types/about';
+import { type About } from '../types/about';
 import { type AxiosResponse } from 'axios';
 import { type ApiSingleResponse } from '../types/types';
 import { useTranslation } from 'react-i18next';
