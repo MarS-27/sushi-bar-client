@@ -3,5 +3,8 @@
   "promotionsPageTitle": "Promotions",
   "deliveryAndPaymentPageTitle": "Delivery and payment",
   "aboutPageTitle": "About Us",
-  "contactsPageTitle": "Contacts"
+  "contactsPageTitle": "Contacts",
+  "addressTitle": "Address",
+  "workModeTitle": "Work mode",
+  "phoneNumberTitle": "Phone for ordering"
 }

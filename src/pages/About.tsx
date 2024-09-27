@@ -9,7 +9,10 @@ const About = () => {
 
   return (
     <section
-      className={clsx('flex max-w-3xl flex-col gap-5 pb-2.5', 'max-md:gap-2.5')}
+      className={clsx(
+        'flex max-w-3xl flex-col gap-5 pb-2.5',
+        'max-md:gap-2.5 max-md:pb-0',
+      )}
     >
       <PageTitle>{t('aboutPageTitle')}</PageTitle>
       {aboutData.paragraphs.map((p) => (

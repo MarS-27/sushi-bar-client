@@ -12,17 +12,17 @@ export const Contacts = () => {
     <section className={clsx('flex flex-col gap-5', 'max-md:gap-2.5')}>
       <PageTitle>{t('contactsPageTitle')}</PageTitle>
       <div>
-        <p className="font-semibold">Адреса:</p>
+        <p className="font-semibold">{t('addressTitle')}:</p>
         {contactsData.addresses.map((a) => (
           <p key={a.id}>{a.value}</p>
         ))}
       </div>
       <div>
-        <p className="font-semibold">Режим роботи:</p>
+        <p className="font-semibold">{t('workModeTitle')}:</p>
         <p>{contactsData.work_mode}</p>
       </div>
       <div>
-        <p className="font-semibold">Телефон для замовлення:</p>
+        <p className="font-semibold">{t('phoneNumberTitle')}:</p>
         <PhoneNumber />
       </div>
     </section>

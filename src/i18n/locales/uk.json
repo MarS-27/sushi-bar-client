@@ -3,5 +3,8 @@
   "promotionsPageTitle": "Акції",
   "deliveryAndPaymentPageTitle": "Доставка i оплата",
   "aboutPageTitle": "Про нас",
-  "contactsPageTitle": "Контакти"
+  "contactsPageTitle": "Контакти",
+  "addressTitle": "Адреса",
+  "workModeTitle": "Режим роботи",
+  "phoneNumberTitle": "Телефон для замовлення"
 }

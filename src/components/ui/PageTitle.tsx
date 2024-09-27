@@ -1,16 +1,16 @@
 import clsx from 'clsx';
 import type { FC, ReactNode } from 'react';
 
-interface PageTitle {
+interface PageTitleProps {
   children: ReactNode;
 }
 
-export const PageTitle: FC<PageTitle> = ({ children }) => {
+export const PageTitle: FC<PageTitleProps> = ({ children }) => {
   return (
     <h1
       className={clsx(
-        'py-5 text-l32 font-semibold text-darkBlue',
-        'max-md:py-2.5 max-md:text-l28',
+        'pt-4 text-l32 font-semibold text-darkBlue',
+        'max-md:pt-0 max-md:text-l28',
       )}
     >
       {children}
