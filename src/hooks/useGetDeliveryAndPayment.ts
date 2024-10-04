@@ -1,9 +1,9 @@
 import { useTranslation } from 'react-i18next';
-import { ApiSingleResponse } from '../types/types';
+import { type ApiSingleResponse } from '../types/types';
 import axiosInstance from '../utils/axiosInstance';
-import { AxiosResponse } from 'axios';
+import { type AxiosResponse } from 'axios';
 import { useSuspenseQuery } from '@tanstack/react-query';
-import { DeliveryAndPayment } from '../types/deliveryAndPayment';
+import { type DeliveryAndPayment } from '../types/deliveryAndPayment';
 
 export const useGetDeliveryAndPayment = () => {
   const { i18n } = useTranslation();
