@@ -1,7 +1,9 @@
 {
+  "and": "і",
   "homePageTitle": "Головна",
   "promotionsPageTitle": "Акції",
-  "deliveryAndPaymentPageTitle": "Доставка i оплата",
+  "deliveryPageTitle": "Доставка",
+  "paymentPageTitle": "Оплата",
   "aboutPageTitle": "Про нас",
   "contactsPageTitle": "Контакти",
   "addressTitle": "Адреса",

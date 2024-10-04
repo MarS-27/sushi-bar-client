@@ -81,6 +81,7 @@ export interface TextValuesList {
 }
 
 export interface InfoList {
+  id: number;
   title: string;
   description: string;
 }

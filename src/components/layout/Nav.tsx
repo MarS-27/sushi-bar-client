@@ -24,7 +24,7 @@ export const Nav: FC<NavProps> = ({ closeMobileNav }) => {
           to={ROUTER_PATHS.delivery_payment}
           closeMobileNav={closeMobileNav}
         >
-          {t('deliveryAndPaymentPageTitle')}
+          {t('deliveryPageTitle')} {t('and')} {t('paymentPageTitle')}
         </NavLink>
         <NavLink to={ROUTER_PATHS.about} closeMobileNav={closeMobileNav}>
           {t('aboutPageTitle')}

@@ -26,7 +26,7 @@ export const FooterNav = () => {
         {t('promotionsPageTitle')}
       </Link>
       <Link to={ROUTER_PATHS.delivery_payment} className={linkStyle}>
-        {t('deliveryAndPaymentPageTitle')}
+        {t('deliveryPageTitle')} {t('and')} {t('paymentPageTitle')}
       </Link>
       <Link to={ROUTER_PATHS.about} className={linkStyle}>
         {t('aboutPageTitle')}
