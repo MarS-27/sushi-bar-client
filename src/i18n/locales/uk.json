@@ -8,5 +8,7 @@
   "contactsPageTitle": "Контакти",
   "addressTitle": "Адреса",
   "workModeTitle": "Режим роботи",
-  "phoneNumberTitle": "Телефон для замовлення"
+  "phoneNumberTitle": "Телефон для замовлення",
+  "details": "Детальніше",
+  "сollapse": "Згорнути"
 }

@@ -8,5 +8,7 @@
   "contactsPageTitle": "Contacts",
   "addressTitle": "Address",
   "workModeTitle": "Work mode",
-  "phoneNumberTitle": "Phone for ordering"
+  "phoneNumberTitle": "Phone for ordering",
+  "details": "Details",
+  "сollapse": "Collapse"
 }

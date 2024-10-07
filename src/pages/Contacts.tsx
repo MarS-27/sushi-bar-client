@@ -1,15 +1,15 @@
-import clsx from 'clsx';
 import { PageTitle } from '../components/ui/PageTitle';
 import { useTranslation } from 'react-i18next';
 import { useGetContacts } from '../hooks/useGetContacts';
 import { PhoneNumber } from '../components/ui/PhoneNumber';
+import { Section } from '../components/layout/Section';
 
 export const Contacts = () => {
   const { t } = useTranslation();
   const { contactsData } = useGetContacts();
 
   return (
-    <section className={clsx('flex flex-col gap-5', 'max-md:gap-2.5')}>
+    <Section>
       <PageTitle>{t('contactsPageTitle')}</PageTitle>
       <div>
         <p className="font-semibold">{t('addressTitle')}:</p>
@@ -25,7 +25,7 @@ export const Contacts = () => {
         <p className="font-semibold">{t('phoneNumberTitle')}:</p>
         <PhoneNumber />
       </div>
-    </section>
+    </Section>
   );
 };
 

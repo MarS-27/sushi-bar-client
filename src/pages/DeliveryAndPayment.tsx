@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { PageTitle } from '../components/ui/PageTitle';
 import { useGetDeliveryAndPayment } from '../hooks/useGetDeliveryAndPayment';
 import { InfoCard } from '../components/deliveryAndPayment/InfoCard';
+import { Section } from '../components/layout/Section';
 
 const DeliveryAndPayment = () => {
   const { t } = useTranslation();
@@ -10,7 +11,7 @@ const DeliveryAndPayment = () => {
   const { delivery, payment } = deliveryAndPaymentData;
 
   return (
-    <section className={clsx('mb-4 flex flex-col gap-5', 'max-md:gap-2.5')}>
+    <Section>
       <PageTitle>{t('deliveryPageTitle')}</PageTitle>
       <div className={clsx('flex gap-5', 'max-sm:flex-col')}>
         {delivery.map((d) => (
@@ -23,7 +24,7 @@ const DeliveryAndPayment = () => {
           <InfoCard key={p.id} title={p.title} description={p.description} />
         ))}
       </div>
-    </section>
+    </Section>
   );
 };
 
