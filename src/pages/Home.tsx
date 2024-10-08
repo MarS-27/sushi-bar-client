@@ -1,5 +1,11 @@
+import { BannersCarousel } from '../components/home/BannersCarousel';
+
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <div>
+      <BannersCarousel />
+    </div>
+  );
 };
 
 export default Home;
