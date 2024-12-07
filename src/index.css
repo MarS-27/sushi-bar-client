@@ -3,3 +3,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.custom-swiper {
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: #58b1ff;
+    opacity: 0.6;
+    transition: all cubic-bezier(0.4, 0, 0.2, 1) 300ms;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    background: #58b1ff;
+    opacity: 0.2;
+  }
+
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+  }
+}
